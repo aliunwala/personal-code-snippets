@@ -61,7 +61,9 @@ function UserInfoForm() {
     return new Promise((resolve) => {
       setTimeout(() => {
         alert(
-          "Form submitted! Check the console for data.\n(SSN handled hypothetically - see code comments)"
+          `Form submitted! Check the console for data.\n(SSN handled hypothetically - see code comments) ${JSON.stringify(
+            data
+          )}`
         );
         resolve(true); // Indicate submission success
       }, 1000); // Simulate network delay

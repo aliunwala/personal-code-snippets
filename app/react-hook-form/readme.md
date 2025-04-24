@@ -23,10 +23,10 @@
 
 ## Form JSX:
 
-- Standard HTML <form> element with onSubmit={handleSubmit(onSubmit)}.
-- <label> elements with htmlFor linked to input ids for accessibility.
-- <input> elements using {...register('fieldName')}.
-- Conditional rendering {errors.fieldName && <span>...</span>} displays error messages below each input if validation fails for that field.
+- Standard HTML `<form>` element with onSubmit={handleSubmit(onSubmit)}.
+- `<label>` elements with htmlFor linked to input ids for accessibility.
+- `<input>` elements using {...register('fieldName')}.
+- Conditional rendering {errors.fieldName && `<span>`...`</span>`} displays error messages below each input if validation fails for that field.
 - The submit button is disabled using the isSubmitting state.
 
 ## onSubmit Function:
