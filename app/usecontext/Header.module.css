@@ -1,0 +1,10 @@
+.headerContainer {
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+  
+  /* Dark theme adjustments specific to Header */
+  :global(.theme-dark) .headerContainer { /* Target based on global theme class */
+      border-bottom-color: #555;
+  }

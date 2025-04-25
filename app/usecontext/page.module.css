@@ -1,0 +1,66 @@
+/* Use :global for truly global styles if needed, but prefer component-specific */
+/* body { ... } should go in index.css */
+
+.appRoot {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.appContainer {
+  border: 2px solid; /* Border color set by theme */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Theme Styles */
+.theme-light {
+  background-color: #ffffff;
+  color: #333333;
+  border-color: #cccccc;
+}
+
+.theme-dark {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #666666;
+}
+
+/* Style adjustments for dark theme within the container */
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark h4 {
+  color: #eee;
+}
+.theme-dark strong {
+  color: #aaeaff;
+}
+.theme-dark hr {
+  /* Example if hr was inside */
+  border-color: #555;
+}
+
+.explanationBox {
+  margin-top: 30px;
+  border: 1px solid blue;
+  padding: 15px;
+  background-color: #f0f5ff;
+  border-radius: 5px;
+  color: black;
+}
+
+.explanationBox h3 {
+  margin-top: 0;
+  color: #003399;
+}
+
+.explanationBox li {
+  margin-bottom: 10px;
+}
+
+.explanationBox b {
+  color: #0055cc;
+}

@@ -1,0 +1,12 @@
+.profileBox {
+    border: 1px dotted blue;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+  }
+  
+  /* Dark theme adjustments */
+  :global(.theme-dark) .profileBox {
+      border-color: #5599ff;
+      background-color: #3a3a3a;
+  }
