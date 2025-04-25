@@ -8,8 +8,13 @@ const ThemeToggleButton: React.FC = () => {
 
   console.log("ThemeToggleButton rendering");
 
+  let toggleButtonText = theme == "dark" ? styles.toggleButtonlight : "";
+
   return (
-    <button onClick={toggleTheme} className={styles.toggleButton}>
+    <button
+      onClick={toggleTheme}
+      className={[styles.toggleButton, toggleButtonText].join(" ")}
+    >
       Switch to {theme === "light" ? "Dark" : "Light"} Theme
     </button>
   );

@@ -1,22 +1,24 @@
 .toggleButton {
-    padding: 8px 15px;
-    cursor: pointer;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    background-color: #f0f0f0;
-    font-weight: bold;
-  }
-  
-  .toggleButton:hover {
-    background-color: #e0e0e0;
-  }
-  
-  /* Dark theme adjustments */
-  :global(.theme-dark) .toggleButton {
-    background-color: #555555;
-    color: #eeeeee;
-    border: 1px solid #777;
-  }
-  :global(.theme-dark) .toggleButton:hover {
-      background-color: #666666;
-  }
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+.toggleButtonlight {
+  color: black;
+}
+.toggleButton:hover {
+  background-color: #e0e0e0;
+}
+
+/* Dark theme adjustments */
+:global(.theme-dark) .toggleButton {
+  background-color: #555555;
+  color: #eeeeee;
+  border: 1px solid #777;
+}
+:global(.theme-dark) .toggleButton:hover {
+  background-color: #666666;
+}
