@@ -27,6 +27,19 @@ GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
 \q -- << Exit interactive mode
 ```
 
+## PSQL quick overview:
+
+1. Connect to a db `psql -U aliunwala -d postgres`
+2. Run a single command with -c `psql -d my_database -c "SELECT * FROM my_table;"`
+   Once you are connected you have the terminal promp to the database, it will look like `postgres=# `
+   Once you have this prompt you can use commands like:
+
+- `postgres-# \l` - List available databases
+- `postgres-# \c myDatabase` - Switch to a specified database
+- `postgres-# \dt` - List tables
+- `postgres-# \d mytable` - Describe a specified table
+- `postgres-# \du myUser` - Listing users
+
 ## Testing the DB and express are connected
 
 GET all products:
